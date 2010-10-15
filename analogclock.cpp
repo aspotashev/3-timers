@@ -11,6 +11,7 @@ AnalogClock::AnalogClock(int timezone)
 
 AnalogClock::~AnalogClock()
 {
+	timer->stop();
 }
 
 void AnalogClock::paintEvent(QPaintEvent *)
